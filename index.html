@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amey Admane | DevOps Engineer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      padding: 100px 20px 80px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin: 0;
+      font-weight: 900;
+      letter-spacing: 5px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      margin-top: 15px;
+      letter-spacing: 1.5px;
+      font-weight: 300;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: -60px auto 60px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2.section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #fff;
+      font-size: 2rem;
+    }
+
+    .about-section {
+      background: #1f1f1f;
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .skill-card {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .skill-card h3 {
+      color: #6a11cb;
+      margin-bottom: 10px;
+    }
+
+    /* Experience */
+    .experience-section {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+    }
+
+    .job {
+      margin-bottom: 30px;
+    }
+
+    .job h3 {
+      color: #6a11cb;
+      margin-bottom: 5px;
+    }
+
+    .job p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: #1f1f1f;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 1.4rem;
+      margin: 0 0 10px 0;
+      color: #6a11cb;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .contact-section {
+      background: #6a11cb;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 20px;
+    }
+
+    .btn-contact,
+    .btn-resume {
+      display: inline-block;
+      margin: 10px;
+      background: white;
+      color: #6a11cb;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 50px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-contact:hover,
+    .btn-resume:hover {
+      background-color: #825be0;
+      color: white;
+    }
+
+    .social-links {
+      margin-top: 25px;
+    }
+
+    .social-links a {
+      color: white;
+      margin: 0 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #d1c4e9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #121212;
+      color: #444;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.8rem;
+        letter-spacing: 3px;
+      }
+
+      header p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Amey Admane</h1>
+    <p>DevOps Engineer | Cloud Automation | Infrastructure as Code</p>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section class="about-section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        DevOps engineer with 3 years of experience in automating deployments, managing cloud infrastructure, and
+        scaling data workflows. Proficient in Kubernetes, Docker, Terraform, and CI/CD automation. Experienced Python
+        developer with hands-on knowledge of AWS, Azure, and GCP. I’m passionate about building resilient, automated
+        systems that help development teams ship faster and safer.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Container Technologies</h3>
+          <p>Docker, ECS Fargate, ECR, Kubernetes (EKS)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cloud Platforms</h3>
+          <p>AWS, Azure, GCP (Basic)</p>
+        </div>
+        <div class="skill-card">
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform, CloudFormation, Helm</p>
+        </div>
+        <div class="skill-card">
+          <h3>Monitoring & Observability</h3>
+          <p>Prometheus, Loki, Grafana, CloudWatch</p>
+        </div>
+        <div class="skill-card">
+          <h3>Databases</h3>
+          <p>PostgreSQL, MongoDB</p>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks</h3>
+          <p>Spring Boot</p>
+        </div>
+        <div class="skill-card">
+          <h3>CI/CD</h3>
+          <p>GitLab CI/CD, ArgoCD</p>
+        </div>
+        <div class="skill-card">
+          <h3>OS</h3>
+          <p>Linux, Windows</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="experience-section">
+        <div class="job">
+          <h3>DevOps Engineer | Siemens Technology, Pune</h3>
+          <p><em>Jul 2023 – Present</em></p>
+          <p>
+            Containerized 13+ applications on AWS ECS Fargate using ECR repositories. Orchestrated Kubernetes resources
+            via Helm and Terraform-provisioned EKS clusters. Built and optimized 20+ GitLab CI pipelines for
+            multi-stage deployments. Configured Prometheus, Grafana, and Loki for observability. Implemented GitOps
+            workflows with ArgoCD and enhanced infrastructure security through network segmentation and hardened
+            container images.
+          </p>
+        </div>
+        <div class="job">
+          <h3>Software Engineer | Siemens Technology, Pune</h3>
+          <p><em>Jan 2023 – Jul 2023</em></p>
+          <p>
+            Developed Python-based AWS Lambda data pipelines using Poetry and S3 event triggers. Enhanced pipeline
+            reliability through structured logging, testing (PyTest, Unittest), and IAM-secured configurations. Improved
+            code quality and reduced failure rates by 25%.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <h2>Let's Connect</h2>
+      <p>Interested in collaborating or hiring? Let’s talk.</p>
+      <a href="mailto:admaneamey92@gmail.com" class="btn-contact">Email Me</a>
+      <a href="resume.pdf" class="btn-resume" download>Download Resume</a>
+      <div class="social-links">
+        <a href="https://github.com/amey-admane" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/amey-admane/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Amey. All rights reserved. Built with ❤️ using HTML & CSS.</p>
+  </footer>
+</body>
+
+</html>
